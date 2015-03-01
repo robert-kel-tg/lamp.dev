@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Use single quotes instead of double quotes to make it work with special-character passwords
-PASSWORD='fikusas14'
+PASSWORD='fikusas'
 PROJECTFOLDER='lamp.dev'
 
 # create project folder
