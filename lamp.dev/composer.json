@@ -1,0 +1,22 @@
+{
+    "name": "root/vagrant",
+    "description": "Demo Composer App",
+    "license": "free",
+    "authors": [
+        {
+            "name": "Robert Kel",
+            "email": "kel.robert@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {
+        "phpunit/phpunit": "4.5.*",
+        "satooshi/php-coveralls": "dev-master",
+        "symfony/dependency-injection": "2.6.*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    }
+}
