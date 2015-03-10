@@ -12,7 +12,8 @@
     "require": {
         "phpunit/phpunit": "4.5.*",
         "satooshi/php-coveralls": "dev-master",
-        "symfony/dependency-injection": "2.6.*@dev"
+        "symfony/dependency-injection": "2.6.*@dev",
+        "rhumsaa/uuid": "~2.8"
     },
     "autoload": {
         "psr-4": {

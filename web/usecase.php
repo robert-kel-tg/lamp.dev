@@ -3,6 +3,7 @@ namespace Src;
 
 require_once '../vendor/autoload.php';
 
+use Rhumsaa\Uuid\Uuid;
 use Src;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Reference;
@@ -74,8 +75,19 @@ try {
 
     $user_case->makeSomeActions($controller);
 
+    $order = new Order(
+        OrderId::create(Uuid::uuid4()),
+        89.56,
+        'Aaa',
+        'Bbb'
+    );
+
+    $orderRepo = new OrderRepository(new EntityManager());
+    $orderRepo->add($order);
+
+    $nextIdentity = $orderRepo->nextIdentity();
     echo '<pre>';
-    print_r($user_case->showUserName($controller));
+    print_r($nextIdentity);
     echo '</pre>';
 
 } catch (\InvalidArgumentException $e) {
