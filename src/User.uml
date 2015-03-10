@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>PHP</ID>
+  <OriginalElement>\Src\User</OriginalElement>
+  <nodes>
+    <node x="367.0" y="123.0">\Src\UserRepository</node>
+    <node x="78.0" y="0.0">\Src\UserComparableInterface</node>
+    <node x="3.0" y="586.0">\Src\UserFactoryRepository</node>
+    <node x="241.0" y="485.0">\Src\UserStatus</node>
+    <node x="382.0" y="0.0">\Src\UserRepositoryInterface</node>
+    <node x="0.0" y="145.0">\Src\User</node>
+    <node x="0.0" y="485.0">\Src\UserFactoryRepositoryInterface</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="\Src\UserRepository" target="\Src\UserRepositoryInterface">
+      <point x="0.0" y="-81.0" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="\Src\User" target="\Src\UserComparableInterface">
+      <point x="0.0" y="-147.5" />
+      <point x="0.0" y="47.5" />
+    </edge>
+    <edge source="\Src\UserFactoryRepository" target="\Src\UserFactoryRepositoryInterface">
+      <point x="0.0" y="-48.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="277.0" y="341.5" />
+  <SelectedNodes>
+    <node>\Src\User</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constants</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
