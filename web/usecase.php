@@ -26,6 +26,13 @@ class UserCase
         return $this->getUserFactoryRepository()->getUserRepository();
     }
 
+    public function showUserName(ControllerInterface $controller)
+    {
+        $getUserByKey = $controller->getUserByKey(3, $this->getRepository());
+
+        return $getUserByKey->getName();
+    }
+
     public function showSum(ControllerInterface $controller)
     {
         return $controller->total($this->getRepository());
@@ -33,7 +40,6 @@ class UserCase
 
     public function makeSomeActions(ControllerInterface $controller)
     {
-//        $getUserByKey = $controller->getUserByKey(3, $this->getRepository());
 
         $controller->setList($this->getRepository()->getList());
         $controller->sort(new BirthDateComparator());
@@ -69,7 +75,7 @@ try {
     $user_case->makeSomeActions($controller);
 
     echo '<pre>';
-    print_r($user_case->showSum($controller));
+    print_r($user_case->showUserName($controller));
     echo '</pre>';
 
 } catch (\InvalidArgumentException $e) {
